@@ -1,6 +1,7 @@
 # Slack Attendance Service
 
 This is an API that gives a student attendance report from attendance threads.
+Deployed at https://slack-attendance-service.herokuapp.com/
 
 ### Prerequisites 
 
