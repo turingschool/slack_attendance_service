@@ -1,9 +1,9 @@
-class Student 
+class StudentReport
     attr_reader :first_name, :last_name, :timestamp
-    def initialize(student_reply_data, message_send_time)
-        @first_name = student_reply_data[:first_name]
-        @last_name = student_reply_data[:last_name]
-        @timestamp = student_reply_data[:timestamp]
+    def initialize(student, reply_timestamp, message_send_time)
+        @first_name = student.first_name
+        @last_name = student.last_name
+        @timestamp = reply_timestamp
         @message_send_time = message_send_time
     end 
 
