@@ -7,7 +7,6 @@ class SlackFacade
         replies.each do |reply|
             time = Time.at(reply[:ts].to_f)
             if !Student.exists?(slack_user_id: reply[:user])
-                require 'pry';binding.pry
                 student_data = SlackService.student_data(reply[:user])
                 user = Student.create({slack_user_id: reply[:user], first_name: student_data[:user][:profile][:first_name], last_name: student_data[:user][:profile][:last_name]})
             else
