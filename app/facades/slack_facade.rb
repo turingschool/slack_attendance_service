@@ -18,6 +18,8 @@ class SlackFacade
         end 
         students_and_answer_time.values.map do |student_data|
             Student.new(student_data, timestamp)
+        end.sort_by do |student|
+            student.last_name
         end 
     end 
 end 
