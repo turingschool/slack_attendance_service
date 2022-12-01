@@ -97,7 +97,6 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.16.3)
     msgpack (1.6.0)
     net-imap (0.3.1)
@@ -109,8 +108,7 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.9)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.13.9-arm64-darwin)
       racc (~> 1.4)
     pg (1.4.5)
     pry (0.14.1)
@@ -162,7 +160,7 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
-  ruby
+  arm64-darwin-20
 
 DEPENDENCIES
   bootsnap
@@ -176,7 +174,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.7.7p221
+   ruby 3.0.3p157
 
 BUNDLED WITH
-   2.1.4
+   2.2.32
