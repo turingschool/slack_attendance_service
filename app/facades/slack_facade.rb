@@ -22,6 +22,14 @@ class SlackFacade
             student_report.last_name
         end 
     end 
+
+    def self.get_members_of_channel(channel_id)
+        members = SlackService.channel_info(channel_id)[:members]
+        members.map do |slack_user_id|
+            student_data = SlackService.student_data(slack_user_id)
+            ChannelMember.new(slack_user_id, student_data)
+        end 
+    end 
 end 
 
 

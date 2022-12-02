@@ -23,7 +23,14 @@ class SlackService
       response = conn.get(endpoint)
       JSON.parse(response.body,symbolize_names: true)
     end 
+
+    def self.channel_info(channel_id)
+      endpoint = "conversations.members?channel=#{channel_id}"
+      response = conn.get(endpoint)
+      JSON.parse(response.body,symbolize_names: true)
+    end 
     
+
 end 
 
 

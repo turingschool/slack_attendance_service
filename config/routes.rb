@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   namespace :api do 
     namespace :v0 do 
       resources :attendance, only: :index
+      resources :channel_members, only: :index
     end 
   end 
 end
