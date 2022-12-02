@@ -11,6 +11,8 @@ For example, if my link is `https://turingschool.slack.com/archives/C02HRH7MF5K/
 
 ## Endpoints
 
+### Get Attendance
+
 Request: 
 `/api/v0/attendance?channel_id=<INSERT CHANNEL ID HERE>&timestamp=<INSERT TIMESTAMP HERE>`
 
@@ -56,5 +58,44 @@ Response:
         ...
        ]
    }
+```
+
+### Get Channel Members
+
+Request: `/api/v0/channel_members?channel_id=<Insert Channel ID Here>`
+
+Response: 
+```json
+{
+    "data": [
+        {
+            "id": null,
+            "type": "channel_member",
+            "attributes": {
+                "slack_user_id": "U02Q25H6V",
+                "name": "Mike Dao"
+            }
+        },
+        {
+            "id": null,
+            "type": "channel_member",
+            "attributes": {
+                "slack_user_id": "U0C6CG4RL",
+                "name": "Allison Reu Singer (she/her)"
+            }
+        },
+        {
+            "id": null,
+            "type": "channel_member",
+            "attributes": {
+                "slack_user_id": "U1C9WHFFS",
+                "name": "Meg Stang"
+            }
+        },
+        ...
+        ...
+        ...
+       ]
+ }
 ```
 
