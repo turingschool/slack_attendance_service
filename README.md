@@ -18,11 +18,13 @@ Response:
 ```json
 {
     "total_replies": 25,
+    "attendance_start_time": "2022-11-30T16:00:59.999+00:00",
     "data": [
         {
             "first_name": "Meg",
             "last_name": "Stang",
             "full_name": "Meg Stang",
+            "email": "mstang@turing.edu",
             "reply_timestamp": "2022-11-30T08:46:24.992-07:00",
             "status": "present"
         },
@@ -30,20 +32,21 @@ Response:
             "first_name": "Erin",
             "last_name": "Pintozzi",
             "full_name": "Erin Pintozzi",
+            "email": "epintozzi@turing.edu",
             "reply_timestamp": "2022-11-30T08:46:29.808-07:00",
             "status": "present"
         },
         {
             "first_name": "Brian",
             "last_name": "Zanti",
-            "full_name": "Brian Zanti",
+            "email": "brian@turing.edu",
             "reply_timestamp": "2022-11-30T08:46:36.756-07:00",
             "status": "present"
         },
         {
             "first_name": "Mike",
             "last_name": "Dao ",
-            "full_name": "Mike Dao ",
+            "email": "mike@turing.edu",
             "reply_timestamp": "2022-11-30T09:09:58.175-07:00",
             "status": "tardy"
         },
