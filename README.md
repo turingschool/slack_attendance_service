@@ -5,7 +5,7 @@ Deployed at https://slack-attendance-service.herokuapp.com/
 
 ### Prerequisites 
 
-In order to use these endpoints, you must identify the channel id where the attendance message was sent, and the timestamp id for that message. Copy the link for the message you're trying to take attendance for -- the two values you ened are in the url. 
+In order to use these endpoints, you must identify the channel id where the attendance message was sent, and the timestamp id for that message. Copy the link for the message you're trying to take attendance for -- the two values you need are in the url. 
 
 For example, if my link is `https://turingschool.slack.com/archives/C02HRH7MF5K/p1669837541553229`, my channel id is `C02HRH7MF5K` and the timestamp is `1669837541553229`
 
