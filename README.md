@@ -17,6 +17,12 @@ For example, if my link is `https://turingschool.slack.com/archives/C02HRH7MF5K/
 
 Request: 
 **GET** `/api/v0/attendance?channel_id=C02HRH7MF5K&timestamp=1669837541553229`
+    
+Headers: <br>
+```
+    Content-Type: application/json
+    Accept: application/json
+```
 
 Response:
 ```json
@@ -72,6 +78,12 @@ Response:
 Request: 
 **GET** `/api/v0/channel_members?channel_id=C02HRH7MF5K`
 
+Headers: <br>
+```
+    Content-Type: application/json
+    Accept: application/json
+```
+    
 Response: 
 ```json
 {
