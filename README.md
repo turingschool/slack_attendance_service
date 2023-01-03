@@ -11,10 +11,12 @@ For example, if my link is `https://turingschool.slack.com/archives/C02HRH7MF5K/
 
 ## Endpoints
 
-### Get Attendance
+<details close>
+<summary>Get Attendance Report</summary>
+<br>
 
 Request: 
-`/api/v0/attendance?channel_id=<INSERT CHANNEL ID HERE>&timestamp=<INSERT TIMESTAMP HERE>`
+**GET** `/api/v0/attendance?channel_id=C02HRH7MF5K&timestamp=1669837541553229`
 
 Response:
 ```json
@@ -60,9 +62,15 @@ Response:
    }
 ```
 
-### Get Channel Members
+</details>
 
-Request: `/api/v0/channel_members?channel_id=<Insert Channel ID Here>`
+
+<details close>
+<summary>Get Channel Members</summary>
+<br>
+
+Request: 
+**GET** `/api/v0/channel_members?channel_id=C02HRH7MF5K`
 
 Response: 
 ```json
@@ -98,4 +106,6 @@ Response:
        ]
  }
 ```
+
+</details>
 
