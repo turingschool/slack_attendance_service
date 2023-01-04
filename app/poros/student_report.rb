@@ -1,11 +1,12 @@
 class StudentReport
-    attr_reader :first_name, :last_name, :email, :timestamp
+    attr_reader :first_name, :last_name, :email, :timestamp, :slack_id
     def initialize(student, reply_timestamp, message_send_time)
         @first_name = student.first_name
         @last_name = student.last_name
         @email = student.email
         @timestamp = reply_timestamp
         @message_send_time = message_send_time
+        @slack_id = student[:slack_user_id]
     end 
 
     def full_name 

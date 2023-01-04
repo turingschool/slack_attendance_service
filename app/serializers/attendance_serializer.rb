@@ -9,6 +9,7 @@ class AttendanceSerializer
                     last_name: student_info.last_name,
                     full_name: student_info.full_name,
                     email: student_info.email,
+                    slack_id: student_info.slack_id,
                     status: student_info.status,
                     reply_timestamp: student_info.timestamp
                 }
