@@ -30,6 +30,22 @@ class SlackFacade
             ChannelMember.new(slack_user_id, student_data)
         end 
     end 
+
+    def self.replies_from_message_v1(channel_id,timestamp)
+        message_start_time =  timestamp.to_f/1000000
+        conversation_data = SlackService.conversation_data(channel_id,message_start_time)
+        replies = conversation_data[:messages][1..-1]
+        students_and_answer_time = {}
+        replies.each do |reply|
+            time = Time.at(reply[:ts].to_f)
+            if students_and_answer_time[reply[:user]].nil?
+                students_and_answer_time[reply[:user]] = time
+            end 
+        end 
+        students_and_answer_time.map do |student,reply_timestamp|
+            SimpleStudentReport.new(student, reply_timestamp, message_start_time)
+        end
+    end 
 end 
 
 
