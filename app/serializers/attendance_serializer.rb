@@ -16,4 +16,18 @@ class AttendanceSerializer
             end 
         }
     end 
+
+    def self.simple_report(student_report, attendance_start_time)
+        {
+            total_replies: student_report.count,
+            attendance_start_time: attendance_start_time,
+            data: student_report.map do |student_info|
+                {
+                    slack_id: student_info.slack_id,
+                    status: student_info.status,
+                    reply_timestamp: student_info.timestamp
+                }
+            end 
+        }
+    end 
 end 
